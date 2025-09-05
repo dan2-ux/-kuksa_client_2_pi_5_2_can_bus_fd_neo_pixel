@@ -9,7 +9,7 @@ on_off = "Vehicle.Cabin.Light.AmbientLight.Row1.DriverSide.IsLightOn"
 intent = "Vehicle.Cabin.Light.AmbientLight.Row1.DriverSide.Intensity"
 color = "Vehicle.Cabin.Light.AmbientLight.Row1.DriverSide.Color"
 
-l_on_off = False
+#l_on_off = False
 l_intent = 0
 l_color = 0x000000
 
@@ -27,11 +27,11 @@ with VSSClient(
         if (target_value[on_off] is not None or
             target_value[intent] is not None or
             target_value[color] is not None):
-            if target_value[on_off].value == True and target_value[on_off].value != l_on_off :
+            if target_value[on_off].value == True: # and target_value[on_off].value != l_on_off :
                 client.set_current_values({
                     on_off: Datapoint(target_value[on_off].value)
                 })
-                l_on_off = client.get_current_values(["Vehicle.Speed"])
+                #l_on_off = client.get_current_values(["Vehicle.Speed"])
                 if target_value[intent].value != l_intent:
                     client.set_current_values({
                         intent: Datapoint(target_value[intent].value)
