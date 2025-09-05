@@ -87,8 +87,10 @@ The target values is the main character here, current values will be changed bas
 Therefor, the only thing you need to do is to alter target value using **set_target_values**. And the rest will be taken care of.
 
 Below is example of what type of can values will be sent.
+<pre>
   cansend can0 123#01.ff.ff.ff.ff
   #The first 3 numbers actually have to power to dectect neo-pixel behavior. 
   #01 is for On, 00 is for Off.
   #ff.ff.ff will be the element that define what colour the neo-pixel will display
   #The final on ff is for the intensity which is from 0 - 255
+</pre>
