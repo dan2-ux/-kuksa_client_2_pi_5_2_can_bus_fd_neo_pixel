@@ -17,7 +17,7 @@ However, enable for can comunication, consider following the connection guide be
 
 ## Workflow
 There is 1 pi 5 with connection to both can hat and neo-pixel. That exact pi will be the one that will contineously wait for can signals to be seen which depend of the type signal, neo-pixel's state will changed based on it.
-While another pi 5 with can connection will wait for **target** values to change to configure the **current**. If the **current** value truly changes then can signals will be sent. And if the first pi I mention above receive can signals then neo-pixel state will be alter.
+While another pi 5 with can connection will wait **current** value to change. If the **current** value truly changes then can signals will be sent. And if the first pi I mention above receive can signals then neo-pixel state will be alter.
 
 ## Configure both pi 5 to enable can comunication
 Doing all the steps below on both pi 5
