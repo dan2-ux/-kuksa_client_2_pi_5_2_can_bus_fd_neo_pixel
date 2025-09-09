@@ -23,7 +23,7 @@ While another pi 5 with can connection will wait **current** value to change. If
 Doing all the steps below on both pi 5
 
 
-### **Warning**: if your pi 5 which is used to send can signals is running an unfamiliar linux distro then that mean you only need to follow step 3 to enable it interaction, no need to do step 1 and step 2 on that pi.
+### **Warning**: if one of your pi is running an unfamiliar linux distro then that mean you only need to follow step 3 to enable it interaction, no need to do step 1 and step 2 on that pi.
 
 
 ### Step 1: 
